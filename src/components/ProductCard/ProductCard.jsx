@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import Select from '../UI/Select/Select';
 import './ProductCard.scss'
 import Size from './Size';
