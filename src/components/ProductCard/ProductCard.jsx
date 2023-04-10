@@ -5,10 +5,6 @@ import Size from './Size';
 import { useColors } from '../../hooks/useProduct';
 const ProductCard = ({product}) => {
 	const [selected, setSelected] = useState(product.colors[0]);
-
-	// const color = useMemo (()=>{
-	// 	return product.colors.find((color) => color === selected)
-	// },[selected])
 	const color = useColors(product, selected)
 	console.log(color)
 
