@@ -1,0 +1,47 @@
+.productCard {
+	padding: 100px 0;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__img {
+		display: flex;
+		align-items: center;
+		margin-right: 40px;
+		border-right: 1px solid grey;
+		img{
+			max-height: 400px;
+			padding:  0 40px;
+		}
+	}
+	&__content {
+		width: 100%;
+		flex: 1 1 auto;
+		text-align: start;
+	}
+	&__title {
+		font-size: 20px;
+		text-align: start;
+	}
+	&__color{
+		display: flex;
+	}
+	&__size {
+		display: flex;
+		align-items: center;
+		&_title{
+			margin-right: 10px;
+		}
+		&_value {
+			cursor: pointer;
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+		}
+		&_empty {
+			color: red
+		}
+	}
+}
+
